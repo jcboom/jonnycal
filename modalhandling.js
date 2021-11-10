@@ -1,6 +1,6 @@
 /*******************************************************************************
 * Author: Jonathan Calzada
-* Purpose: OPEN ANY MODAL VIA LINK w/ # e.g.  jonathan.jcboom.com#portfolioModal1
+* Purpose: OPEN ANY MODAL VIA LINK w/ # e.g.  jonnycal.com#portfolioModal1
 * Date: 5/25/2017
 *******************************************************************************/
 /* BEGIN: FUNCTION */
