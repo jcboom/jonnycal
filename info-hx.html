@@ -1,0 +1,44 @@
+<!-- Typewritter Effect -->
+<script src="js/typewriter-effect.js"></script>
+<!-- Header -->
+<section>
+  <!--
+  <div id="typewriter" class="modal-title-description type-ux">
+    <span class="string-highlight">As role of anthropology in the 21st century expands, product design companies are increasingly employing anthropological methods in an atempt to innovate new products and improve their consumers' experiences. As an anthropologist I study these methods in corporate environments because they prove to reveal deeper and more meaninful human insights.</span>
+  </div>
+-->
+
+</section>
+<!-- Body -->
+<section id="info-body">
+  <div class="info-title">Philosophia &#x25cf; Haxor &#x25cf; praxis</div>
+  <div class="info-text">
+    Jugaad is a colloquial term in Hindi that refers to informal solutions for everyday situations or problems. Its closest English equivalent would be 'kludge' or 'hack.'  There have been too many situations and problems throughout my life that have required informal solutions. I have become adept in hacking my way through jobs, school, and social connections. "if you want to get things done, you have to learn to reconnoiter your way around poorly designed and executed processes and systems" (Philip, Irani, Dourish 2010).
+  </div>
+  <div class="info-menu">
+    <!-- <div class="info-menu-buttons"><a href="#" class="info-menu-button-resources orange"> <i class="fa fa-file-pdf-o"></i> </a></div> -->
+    <div class="info-menu-buttons"><a href="#" class="info-menu-button-info blue" onClick="$('#menu-open-hx').click();"><i class="fa fa-times"></i></a></div>
+    <div class="info-menu-buttons"><a href="#" class="info-menu-button-view green"  onClick="$('#menu-open-hx').click();"><i class="fa fa-eye"></i></a></div>
+  </div>
+</section>
+<script>
+/*******************************************************************************
+* Author: Jonathan Calzada
+* Purpose: Menu modal buttons
+* Date: 7/10/2017
+*******************************************************************************/
+$(document).ready(function(){
+  $('.info-menu-button-view').click(function(){
+    $(document.body).animate({
+      'scrollTop':   $('#jcboom-projects').offset().top
+    }, 1000);
+  });
+ });
+</script>
+
+
+<!-- Footer -->
+
+<!-- <section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-ux" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section> -->

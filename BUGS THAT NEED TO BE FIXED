@@ -1,0 +1,4 @@
+BUGS THAT NEED TO BE FIXED
+
+1. Slider switch on/off label becomes insconsistent with its state when window is resized repeateadly between 992 threashhold.
+2. The X labels on the filters sometimes do not change color inline with the button type color e.g hx, an, ph, ux

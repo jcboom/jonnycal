@@ -1,0 +1,33 @@
+<!-- Body -->
+<section id="info-body">
+  <div class="info-title">Philosophia &#x25cf; UX design &#x25cf; practitioner</div>
+  <div class="info-text">
+    As a User Experience practitioner, I am critical of the human-centered design philosophy as I push to broaden its scope and encompass key human aspects such as agency, intersectionality, identity and equity. I am aware that technology is socially constructed, which is to say that there is inherent culture nestled in the code of every software application. I seek to break the myth of autonomous technology through practice and education. My interdisciplinary background provides me with the tools to help design meaningful experiences.
+  </div>
+  <div class="info-menu">
+    <div class="info-menu-buttons"><a href="#" class="info-menu-button-info blue" onClick="$('#menu-open-ux').click();"><i class="fa fa-times"></i></a></div>
+    <div class="info-menu-buttons"><a href="#" class="info-menu-button-view green"  onClick="$('#menu-open-ux').click();"><i class="fa fa-eye"></i></a></div>
+    <div class="info-menu-buttons"><a href="http://jonathancalzada.com/Resume.pdf" target="_blank" class="info-menu-button-resources orange"> <i class="fa fa-file-pdf-o"></i> </a></div>
+  </div>
+</section>
+<script>
+/*******************************************************************************
+* Author: Jonathan Calzada
+* Purpose: Menu modal buttons
+* Date: 7/10/2017
+*******************************************************************************/
+$(document).ready(function(){
+  $('.info-menu-button-view').click(function(){
+    $(document.body).animate({
+      'scrollTop':   $('#jcboom-projects').offset().top
+    }, 1000);
+  });
+ });
+</script>
+
+
+<!-- Footer -->
+
+<!-- <section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-ux" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section> -->
