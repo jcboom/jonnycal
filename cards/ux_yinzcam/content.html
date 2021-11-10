@@ -1,0 +1,210 @@
+<!-- Typewritter Effect -->
+<script src="js/typewriter-effect.js"></script>
+<!-- Header -->
+<section id="modal-hero" style="background-image: url(cards/ux_yinzcam/images/hero.jpg);">
+  <div class="jcboom-card-modal-corner btn-close" data-dismiss="modal"><p class="jcboom-card-modal-corner-text color-ux">Ux</p></div>
+  <div class="jcboom-card-modal-close btn-close" data-dismiss="modal"><p class="jcboom-card-modal-close-text color-ux">&times;</p></div>
+  <div class="modal-overlay type-ux"></div>
+  <div class="modal-title">Designing the CMS admin experience</div>
+  <div class="jcboom-card-modal-ribbon bgcolor-white color-ux"><span class="jcboom-card-modal-ribbon-text">UX Design @ YinzCam</span></div>
+
+  <div class="project-meta-data-li">
+    <a href="http://www.yinzcam.com" target="_blank"><i class="fa fa-building-o fa-lg fa-fw" aria-hidden="true" title="YinzCam"></i> YinzCam</a> </br>
+    <i class="fa fa-info-circle fa-lg fa-fw" aria-hidden="true" title="Pittsburgh, PA"></i> Sports App Developer</br>
+    <i class="fa fa-map-marker fa-lg fa-fw" aria-hidden="true" title=""></i>  Pittsburgh, PA </br>
+    <i class="fa fa-calendar fa-lg fa-fw" aria-hidden="true" title="Summer 2016"></i>&nbsp;&nbsp;Summer 2016</br>
+    <i class="fa fa-user-circle fa-lg fa-fw" aria-hidden="true" title="UX Designer + Design Researcher"></i> UX Designer </br>
+  </div>
+
+</section>
+
+<!-- Body -->
+
+<div id="social-buttons">
+  <a href="#portfolioModal1" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fux_yinzcam%2Fsmbuttons.html&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+  <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Jonathan%20Calzada%20-%20Portfolio&tw_p=tweetbutton&url=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fux_yinzcam%2Fsmbuttons.html&via=JonnyCalz"></a>
+  <a href="#portfolioModal1" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'Link copied to clipboard':'Link could not be copied to Clipboard.';
+        $(".fa-link").notify(msg, { position:"bottom right", style: 'smButtonTooltip'});
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
+</div>
+<!-- END: Social Media Buttons -->
+
+<section id="modal-body">
+  <div class="project-body-title color-ux">overview &amp; impact</div>
+  <div class="project-body-description">As a User Experience Designer, I initiated and led the re-design of the YinzCam Content Management System (CMS).  Conducted contextual inquiries, user interviews and expert reviews of current system in order to inform the design of a new navigation paradigm, information architecture, interactions model, and design language.  This holistic approach resulted in concrete benefits including a potentially measurable increase in the usability and ‘learnability’ of YinzCam enterprise software.
+  </div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_yinzcam/images/yinzcam_team_purple.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-futbol-o fa-lg color-ux" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Kickoff Meeting</h4>
+        <p>Gathered developers and designers to discuss design recommendations and develop a Fan (User) & Admin (User) Experience research plan.  Developers agreed that a UX audit should be conducted and design recommendations should follow.  Developers further walked me through a module demo and briefly introduced basic concepts to the proprietary CMS.  Documented details and uploaded them to team site.</p>
+      </div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-search fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Exploratory Interviews</h4>
+        <p>Conducted a exploratory interviews using a <a href="http://usabilitybok.org/contextual-inquiry" target="_blank">contextual inquiry</a> method with YinzCam Director of Web Applications, Helpdesk Support Specialist, CMS UI Designer, and CMS Backend Developer in order to learn about system features, modules, and their design and implementations. Through these interviews (admin) user pain points were identified that informed UX priorities and pointed to larger design challenges that needed to be addressed. These interviews also uncovered opportunities to incorporate much needed functionality and next generation analytics. These inquiries informed stakeholders, developers, and designers about the current UX state of the proprietary content management system.</p>
+      </div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_yinzcam/images/ux_mapping.png" /></div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container center"><img src="cards/ux_yinzcam/images/yinzcamapps.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+            <h4><i class="fa fa-list-alt fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Expert Reviews</h4>
+            <p>Conducted UX Expert Reviews with UI Designers and the Director of System Architecture in order to generate a detailed list of user experience issues within each module. Some of the areas of improvement included the following:</p>
+            <ul>
+              <li>System feedback consistency</li>
+            	<li>‘Learnability’</li>
+            	<li>Interaction and visual design language</li>
+            	<li>Onboarding process</li>
+            	<li>Personalization</li>
+            	<li>Data visualizations</li>
+            	<li>Dashboard analytics including contextual data</li>
+            </ul>
+      </div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-sticky-note fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Data Synthesis</h4>
+        <p>After conducting contextual inquiries, user interviews, and expert reviews as part of the UX research plan, I worked closely with Nouf Aljowaysir to analyze the collected data identifying themes, patterns, and UX priorities. We synthesize the raw data into one spreadsheet and further refined it into a presentation for YinzCam's CEO, Priya Narasimhan. In order to facilitate the design phase of the project I created a taxonomy that helped prioritize UX and development work as follows:</p>
+        <ul>
+          <li><span style="font-weight:bold;color:#97DDAF;">Ground veggies</span> – issues that could easily be fixed with little effort and in less than a working day.</li>
+          <li><span style="font-weight:bold;color:#F3B3B0;">Low hanging fruit</span> – obvious issues that could be easily fixed and may have a visual or user interaction impact.</li>
+          <li><span style="font-weight:bold;color:#E5BB3E;">High tree fruit</span> – either obvious or implicit user experience issues that have a high impact on customers that should be addressed when time permits.</li>
+          <li><span style="font-weight:bold;color:#91CEEE;">Cloud candy</span> – Aspirational nice-to-haves that may require extensive design and development but would provide a next-generation user experience.</li>
+        </ul>
+        </p>
+      </div>
+      <div style="display:table-cell;" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_yinzcam/images/postits.png" /></div>
+
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container center"><img src="cards/ux_yinzcam/images/dthinking.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+            <h4><i class="fa fa-sticky-note fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Design Thinking</h4>
+            <p>After the UX Research phase, I used the data to produce concrete designs based on educated assumptions about the user, all while remaining flexible and open to aspirational solutions. In order to accomplish this, I took an informal <a href="http://dschool.stanford.edu/dgift/" target="_blank">design thinking</a> approach where sufficient time was spent on divergent thinking and ideation before converging on a CMS design solution. During this phase, all judgment and feasibility concerns were suspended in order to come up with different, and sometimes innovative, ways of meeting CMS user needs and expectations. Out of these activities wireframes and sketches drawn on whiteboards, paper, and ‘stickies’ were produced. In addition, I printed out inspiring UIs gathered from <a href="http://pinterest.com" target="_blank">Pinterest</a>, <a href="http://dribbble.com" target="_blank">Dribbble</a>, <a href="http://squarespace.com" target="_blank">Squarespace</a> and other public sites. I then posted them all around the walls of our workspace for quick reference while working. This design phase resulted in an initial idea of a holistic, end-to-end, user-centric CMS that reduced complexity potentially elevating the UX to the next tier.
+            </p>
+      </div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-pencil fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Informed Design Phase</h4>
+        <p>User flows, wireframes, Sketch designs and prototypes were iteratively developed informed by <a href="http://www.uxbooth.com/articles/the-art-of-guerrilla-usability-testing/" target="_blank">guerilla usability testing</a>. The first ideation and user flows were on paper. I simply wanted to design the basic core functionality of specific modules. I found that a storyboard approach was very helpful and easy to draw out and follow. Once a basic user flow was designed, the actual UI design followed. I continued with low fidelity wireframes for several reasons. First, I wanted to prevent users and stakeholders alike from thinking that the designs were final, which is to say permanent, or difficult to change or modify. Second, I wanted to encourage critique, modifications and even 'do-overs.' Lastly, I wanted to make sure that color, icons, or any other aspects of visual design did not bog down developers and visual designers. The wireframes focused on functionality, features, information architecture, navigation and interaction design.
+        </p>
+
+      </div>
+      <div style="display:table-cell;" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_yinzcam/images/designs.png" /></div>
+
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container center"><img src="http://jonathan.jcboom.com/images/featured-work.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+            <h4><i class="fa fa-laptop fa-lg color-ux fa-fw" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;HTML Prototype</h4>
+            <p>A <a href="http://jonathancalzada.com/255/yinzcam/prototype/" target="_blank">basic HTML prototype</a>* was created to demonstrate how the iPhone Content Editor would render in a browser and to further demonstrate the vision to developers and stakeholders.
+            </p>
+            <p style="font-size:10px; line-height: 10px;">*Only one basic itiration of the design is shown in order to respect proprietary information and functionality. All logos and sports images used are for illustrative purposes; no profit is being made in their use on this site. Please contact me if you do not have access to the prototype.</p>
+      </div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-file-text fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Documentation</h4>
+        <p>Providing the team with the documented processes and steps to continue the design itirations we covered the following key flows and features:</p>
+        <div style="font-size:10pt;">
+        <ul>
+        <li>New Navigation paradigm (Feature)</li>
+        <li>Single Card Creation w/ Onboarding (User Flow)</li>
+        <li>Multiple Cards Creation (User Flow)</li>
+        <li>Carousel Creation w/ Mutliple Cards Selected (User Flow)</li>
+        <li>Carousel Creation w/ Single Card Selected (User Flow)</li>
+        <li>Updating Splash Screens (User Flow)</li>
+        <li>Preview & Publish (Feature)</li>
+        <li>Theming CMS Platform (Feature)</li>
+        <li>iOS and Android device visualization toggle (Feature)</li>
+        <li>Tray mechanism for cards repository (Feature)</li>
+        <li>Simulation of content on multiple devices (Feature)</li>
+        <li>Onboarding experience (Feature)</li>
+        </ul>
+        </div>
+        <p>
+        In addition to the documentation and presentations provided to members of the team and CEO, I built a website <a href="https://timeline.knightlab.com/" target="_blank" style="font-style:italic">TimelineJS</a> complete with a table of contents and embedded links to local servers where access to the raw data as well as the data synthesis is available. I also included methodological explanations and references to both professional and academic sources for further reading.  Lastly, I adumbrated future steps including the UX research and design framework to follow that I created out of existing models but tailored to YinzCam.
+        </p>
+
+      </div>
+      <div style="display:table-cell;" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_yinzcam/images/documentation.png" /></div>
+
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container center"><img src="cards/ux_yinzcam/images/artifact.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+            <h4><i class="fa fa-graduation-cap fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Design Anthropology </h4>
+            <p>As a Design Anthropologist, I documented organizational discoveries that affect workflows, employee interactions, office culture, and other aspects.  Taking a Design Anthropology approach forced me to peel back the layers of YinzCam design culture delving deep into the company’s organizational structure in order to discover root causes. I decided to do this because I wanted to understand, document, and create meaningful and lasting solutions, as well as build a framework that would contribute to taking YinzCam to the next <a href="https://nataliehanson.com/2017/02/13/ux-maturity-models/" target="_blank">UX maturity level</a>.
+            </p>
+      </div>
+  </div>
+</div>
+</section>
+
+<section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-ux btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section>
+
+<!-- START: Resets URL when closing modal -->
+<script>$(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });</script>
+<!-- END: Resets URL when closing modal -->

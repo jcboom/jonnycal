@@ -1,0 +1,260 @@
+<!-- Typewritter Effect -->
+<script src="js/typewriter-effect.js"></script>
+<!-- Header -->
+<section id="modal-hero" style="background-image: url(cards/ux_sap/images/hero.png);">
+  <div class="jcboom-card-modal-corner btn-close" data-dismiss="modal"><p class="jcboom-card-modal-corner-text color-ux">Ux</p></div>
+  <div class="jcboom-card-modal-close btn-close" data-dismiss="modal"><p class="jcboom-card-modal-close-text color-ux">&times;</p></div>
+  <div class="modal-overlay type-ux"></div>
+  <div class="modal-title">A Variety of Usability Studies</div>
+  <div class="jcboom-card-modal-ribbon bgcolor-white color-ux"><span class="jcboom-card-modal-ribbon-text">UX Design @ sap</span></div>
+
+  <div class="project-meta-data-li">
+    <a href="http://www.sap.com" target="_blank"><i class="fa fa-building-o fa-lg fa-fw" aria-hidden="true" title="SAP Labs, LLC."></i> SAP Labs, LLC.</a> </br>
+    <i class="fa fa-info-circle fa-lg fa-fw" aria-hidden="true" title="Pittsburgh, PA"></i> Enterprise Software Corporation</br>
+    <i class="fa fa-map-marker fa-lg fa-fw" aria-hidden="true" title=""></i>  Palo Alto, CA </br>
+    <i class="fa fa-calendar fa-lg fa-fw" aria-hidden="true" title="Summer 2016"></i>&nbsp;&nbsp;2012-2014</br>
+    <i class="fa fa-user-circle fa-lg fa-fw" aria-hidden="true" title="UX Design Researcher"></i> UX Researcher </br>
+  </div>
+
+</section>
+
+<!-- Body -->
+
+<div id="social-buttons">
+  <a href="#portfolioModal8" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fux_sap%2Fsmbuttons.html&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+  <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Jonathan%20Calzada%20-%20Portfolio&tw_p=tweetbutton&url=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fux_sap%2Fsmbuttons.html&via=JonnyCalz"></a>
+  <a href="#portfolioModal8" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'Link copied to clipboard':'Link could not be copied to Clipboard.';
+        $(".fa-link").notify(msg, { position:"bottom right", style: 'smButtonTooltip'});
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
+</div>
+<!-- END: Social Media Buttons -->
+
+<section id="modal-body">
+  <div class="project-body-title color-ux">overview &amp; impact</div>
+  <div class="project-body-description">As a User Experience Researcher, I Conducted UX research activities on SAP products across three main platforms: Cloud, Mobile, and On-Premise.  My primary duties included conducting formative usability studies, ethnographic research, and end-user interviews.  Post-research duties included organizing and executing research data analysis and synthesis sessions with product teams, and the communication of findings to product stakeholders.  I conducted research on many SAP products including SAP CRM solutions, BusinessObjects Intelligence Platform, SAP Mobile Platform and mobile enterprise applications. User research often greatly contributed to minimizing product support costs, increase of end-user satisfaction, and the improvement of the overall user experience of SAP products. Only a few studies are shown below.
+  </div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_sap/images/ondemand.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-tachometer fa-lg color-ux" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Sales & Service On-Demand Study</h4>
+        <p>Designed, proposed, conducted, and reported results of formative usability study for SAP sales and service on-demand application dashboards.</p>
+        <ol>
+          <li><span style="font-style:italic;font-weight:bold;color:#5A0AA1;">Designed</span> &mdash; Met with stakeholders including product managers, developers and designers in order to design a usability study that would address questions and concerns about the latest dashboard designs.</li>
+          <li><span style="font-style:italic;font-weight:bold;color:#F4B800;">Proposed</span> &mdash; Presented a research plan that would validate the available dashboard designs with new and existing end-users.</li>
+          <li><span style="font-style:italic;font-weight:bold;color:#8B7C6D;">Conducted</span> &mdash; Created a detailed participant recruitment screener and worked with recruitment vendor to select the most qualified participants for the study. Created a moderator test script in consultation with stakeholders. Conducted usability study with 8 test participants from service and sales.</li>
+          <li><span style="font-style:italic;font-weight:bold;color:#0197B2;">Reported</span> &mdash; Presented usability study findings to all stakeholders. The study accomplished the following:</li>
+          <ul style="font-size:10pt;">
+            <li>Assessed users’ <b>perception</b> of dashboards designs including first impressions</li>
+            <li>Determined users’ <b>navigation</b> expectations and ability to perform relevant tasks</li>
+            <li>Assessed whether users were able to discover and use dashboard <b>functionality</b></li>
+            <li>Determined users’ <b>content</b> expectations of a personalized dashboard</li>
+            <li>Gathered feedback about the <b>visual design</b></li>
+          </ul>
+        </ol>
+        </p>
+      </div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-search fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Social/Service On-Demand Study</h4>
+        <p>Assessed the overall user experience from participants (customer service agents) by focusing on the product’s top workflows and task.</p>
+        <ol>
+          <li><span style="font-style:italic;font-weight:bold;color:#5A0AA1;">Designed</span> &mdash; : In order to capture appropriate feedback that informed the design team to develop intricate functionality, the following objectives were included in the design of the usability study:</li>
+          <ul style="font-size:10pt;">
+            <li>Allow participants with more freedom to explore and provide feedback</li>
+            <li>Identify areas that are working well and those that need improvement</li>
+            <li>Gather feedback on terminology and UI elements</li>
+	          <li>Gather satisfaction, ease of use, relevancy ratings and count success/fail rates per workflows and tasks</li>
+          </ul>
+          <li><span style="font-style:italic;font-weight:bold;color:#8B7C6D;">Conducted</span> &mdash; Created a detailed participant recruitment screener and worked with recruitment vendor to select the most qualified participants for the study. Created a moderator test script in consultation with stakeholders. Conducted a formative usability study with 6 test participants:</li>
+          <ul style="font-size:10pt;">
+            <li>One on One structured interviews and task-based usability sessions</li>
+            <li>Tasks were designed to answer research questions with progressive assistance (from the general to the specific) when necessary</li>
+            <li>Participants were not provided training or demos prior to participation</li>
+            <li>Assistance was tracked for each task. Four or more assists constituted a task failure</li>
+            <li>Use of “think-aloud” method was employed</li>
+          </ul>
+          <li><span style="font-style:italic;font-weight:bold;color:#F4B800;">Team Analysis + Synthesis</span> &mdash; Analyzed and synthesized findings by clustering and discussing data directly with designers, developers, product managers and other stakeholders who observed the usability sessions.</li>
+          <li><span style="font-style:italic;font-weight:bold;color:#0197B2;">Reported</span> &mdash; Presented detailed usability study findings to all stakeholders. The presentation included the following elements:</li>
+          <ul style="font-size:10pt;">
+            <li>Summary of product goals and study goals</li>
+            <li>Study details including objectives, user profiles, participants, study sessions, and teams involved</li>
+            <li>Research methodology and study format</li>
+            <li>List of tasks</li>
+            <li>A narrative walkthrough of top findings for intelligibility</li>
+            <li>Ratings for each task in terms of ‘ease-of-use’ and ‘relevancy’</li>
+          </ul>
+        </ol>
+        </p>
+      </div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_sap/images/socialod.png" /></div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container center"><img src="cards/ux_sap/images/rex.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+            <h4><i class="fa fa-tablet fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Retail Execution Study</h4>
+            <p>Conducted a formative usability study on retail sales representative mobile application.</p>
+            <ol>
+              <li><span style="font-style:italic;font-weight:bold;color:#5A0AA1;">Designed</span> &mdash; Met with stakeholders including product managers, developers and designers and put together a research design with the following measures:</li>
+              <ul style="font-size:10pt;">
+                <li>Success Rate – Percentage of participants that competed each task</li>
+                <li>Time to completion – Average time to complete ach task</li>
+                <li>Post-task questions – subjective ratings on relevancy, ease-of-use and satisfaction</li>
+                <li>Qualitative observations – Observations on how participants used the retail representative application</li>
+                <li>SUS – System Usability Scale was used to gauge usability and ‘learnability’</li>
+              </ul>
+              <li><span style="font-style:italic;font-weight:bold;color:#8B7C6D;">Conducted</span> &mdash; Created a detailed participant recruitment screener and worked with recruitment vendor to select the most qualified participants for the study. Created a moderator test script in consultation with stakeholders. The script included 8 tasks plus wrap-up questions, SUS questionnaire, and opportunity for final thoughts/feedback. Conducted usability study with 7 meeting the following criteria:</li>
+              <ul style="font-size:10pt;">
+                <li>Two or more years of experience performing retail execution tasks at store level</li>
+                <li>Conducts store visits and spends at least 60% of their time in stores</li>
+                <li>Have experience using mobile devices (smart phones or tablets)</li>
+              </ul>
+              <li><span style="font-style:italic;font-weight:bold;color:#0197B2;">Reported</span> &mdash; Presented usability study findings to stakeholders. Presentation included a summary of top usability issues, positive feedback, SUS results, graphs of success rates and time on task breakdown. Additional report was provided with screenshots of detailed findings and breakdown of all usability issues:</li>
+            </ol>
+      </div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-plane fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Service Center Contextual Inquiry</h4>
+        <p>Conducted field research aimed at deepening understanding of the Customer Service Agent role including identifying core tasks, work responsibilities and needs. </p>
+        <ol>
+          <li><span style="font-style:italic;font-weight:bold;color:#5A0AA1;">Designed</span> &mdash; Met with stakeholders including product managers, developers and designers and put together a research design that involved day-long contextual observations of end-users as they performed daily tasks. </li>
+          <li><span style="font-style:italic;font-weight:bold;color:#8B7C6D;">Conducted</span> &mdash; The research effort required an entire team of observers in order to efficiently capture data from 10 end-users in their place of business. There were three debriefs with the research team that helped consolidate findings throughout the day.</li>
+          <li><span style="font-style:italic;font-weight:bold;color:#0197B2;">Reported</span> &mdash; A “day-in-the-life” composite narrative was developed in order to successfully present research findings to all stakeholders at SAP. Many nuanced issues were uncovered including case workflow problems that involved extra-technological solutions.  The presentation included detailed walkthroughs that showcased key findings in relation to usability, implementation, frameworks, and even bugs. Design recommendations were also presented in the final presentation and reports.</li>
+        </ol>
+        </p>
+      </div>
+      <div style="display:table-cell;" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_sap/images/sfsf.png" /></div>
+  </div>
+</div>
+<!--
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container center"><img src="cards/ux_yinzcam/images/dthinking.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+            <h4><i class="fa fa-sticky-note fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Design Thinking</h4>
+            <p>After the UX Research phase, I used the data to produce concrete designs based on educated assumptions about the user, all while remaining flexible and open to aspirational solutions. In order to accomplish this, I took an informal <a href="http://dschool.stanford.edu/dgift/" target="_blank">design thinking</a> approach where sufficient time was spent on divergent thinking and ideation before converging on a CMS design solution. During this phase, all judgment and feasibility concerns were suspended in order to come up with different, and sometimes innovative, ways of meeting CMS user needs and expectations. Out of these activities wireframes and sketches drawn on whiteboards, paper, and ‘stickies’ were produced. In addition, I printed out inspiring UIs gathered from <a href="http://pinterest.com" target="_blank">Pinterest</a>, <a href="http://dribbble.com" target="_blank">Dribbble</a>, <a href="http://squarespace.com" target="_blank">Squarespace</a> and other public sites. I then posted them all around the walls of our workspace for quick reference while working. This design phase resulted in an initial idea of a holistic, end-to-end, user-centric CMS that reduced complexity potentially elevating the UX to the next tier.
+            </p>
+      </div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-pencil fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Informed Design Phase</h4>
+        <p>User flows, wireframes, Sketch designs and prototypes were iteratively developed informed by <a href="http://www.uxbooth.com/articles/the-art-of-guerrilla-usability-testing/" target="_blank">guerilla usability testing</a>. The first ideation and user flows were on paper. I simply wanted to design the basic core functionality of specific modules. I found that a storyboard approach was very helpful and easy to draw out and follow. Once a basic user flow was designed, the actual UI design followed. I continued with low fidelity wireframes for several reasons. First, I wanted to prevent users and stakeholders alike from thinking that the designs were final, which is to say permanent, or difficult to change or modify. Second, I wanted to encourage critique, modifications and even 'do-overs.' Lastly, I wanted to make sure that color, icons, or any other aspects of visual design did not bog down developers and visual designers. The wireframes focused on functionality, features, information architecture, navigation and interaction design.
+        </p>
+
+      </div>
+      <div style="display:table-cell;" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_yinzcam/images/designs.png" /></div>
+
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container center"><img src="http://jonathan.jcboom.com/images/featured-work.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+            <h4><i class="fa fa-laptop fa-lg color-ux fa-fw" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;HTML Prototype</h4>
+            <p>A <a href="http://jonathancalzada.com/255/yinzcam/prototype/" target="_blank">basic HTML prototype</a>* was created to demonstrate how the iPhone Content Editor would render in a browser and to further demonstrate the vision to developers and stakeholders.
+            </p>
+            <p style="font-size:10px; line-height: 10px;">*Only one basic itiration of the design is shown in order to respect proprietary information and functionality. All logos and sports images used are for illustrative purposes; no profit is being made in their use on this site. Please contact me if you do not have access to the prototype.</p>
+      </div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-file-text fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Documentation</h4>
+        <p>Providing the team with the documented processes and steps to continue the design itirations we covered the following key flows and features:</p>
+        <div style="font-size:10pt;">
+        <ul>
+        <li>New Navigation paradigm (Feature)</li>
+        <li>Single Card Creation w/ Onboarding (User Flow)</li>
+        <li>Multiple Cards Creation (User Flow)</li>
+        <li>Carousel Creation w/ Mutliple Cards Selected (User Flow)</li>
+        <li>Carousel Creation w/ Single Card Selected (User Flow)</li>
+        <li>Updating Splash Screens (User Flow)</li>
+        <li>Preview & Publish (Feature)</li>
+        <li>Theming CMS Platform (Feature)</li>
+        <li>iOS and Android device visualization toggle (Feature)</li>
+        <li>Tray mechanism for cards repository (Feature)</li>
+        <li>Simulation of content on multiple devices (Feature)</li>
+        <li>Onboarding experience (Feature)</li>
+        </ul>
+        </div>
+        <p>
+        In addition to the documentation and presentations provided to members of the team and CEO, I built a website <a href="https://timeline.knightlab.com/" target="_blank" style="font-style:italic">TimelineJS</a> complete with a table of contents and embedded links to local servers where access to the raw data as well as the data synthesis is available. I also included methodological explanations and references to both professional and academic sources for further reading.  Lastly, I adumbrated future steps including the UX research and design framework to follow that I created out of existing models but tailored to YinzCam.
+        </p>
+
+      </div>
+      <div style="display:table-cell;" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_yinzcam/images/documentation.png" /></div>
+
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container center"><img src="cards/ux_yinzcam/images/artifact.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+            <h4><i class="fa fa-graduation-cap fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Design Anthropology </h4>
+            <p>As a Design Anthropologist, I documented organizational discoveries that affect workflows, employee interactions, office culture, and other aspects.  Taking a Design Anthropology approach forced me to peel back the layers of YinzCam design culture delving deep into the company’s organizational structure in order to discover root causes. I decided to do this because I wanted to understand, document, and create meaningful and lasting solutions, as well as build a framework that would contribute to taking YinzCam to the next <a href="https://nataliehanson.com/2017/02/13/ux-maturity-models/" target="_blank">UX maturity level</a>.
+            </p>
+      </div>
+  </div>
+</div>
+
+-->
+</section>
+
+<section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-ux btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section>
+
+<!-- START: Resets URL when closing modal -->
+<script>$(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });</script>
+<!-- END: Resets URL when closing modal -->

@@ -1,0 +1,113 @@
+<!-- Typewritter Effect -->
+<script src="js/typewriter-effect.js"></script>
+<!-- Header -->
+<section id="modal-hero" style="background-image: url(cards/ux_edenos/images/hero.png);">
+  <div class="jcboom-card-modal-corner btn-close" data-dismiss="modal"><p class="jcboom-card-modal-corner-text color-ux">Ux</p></div>
+  <div class="jcboom-card-modal-close btn-close" data-dismiss="modal"><p class="jcboom-card-modal-close-text color-ux">&times;</p></div>
+  <div class="modal-overlay type-ux"></div>
+  <div class="modal-title">Eden Online Support</div>
+  <div class="jcboom-card-modal-ribbon bgcolor-white color-ux"><span class="jcboom-card-modal-ribbon-text">UX Design @ EdenOS</span></div>
+
+  <div class="project-meta-data-li">
+    <a href="https://edenos.com" target="_blank"><i class="fa fa-building-o fa-lg fa-fw" aria-hidden="true" title="Consumer Reports"></i> Eden Online Support</a> </br>
+    <i class="fa fa-info-circle fa-lg fa-fw" aria-hidden="true" title="Medical Student-Run Nonprofit"></i> Medical Student-Run Nonprofit </br>
+    <i class="fa fa-map-marker fa-lg fa-fw" aria-hidden="true" title="Los Angeles, CA"></i> Los Angeles, CA </br>
+    <i class="fa fa-calendar fa-lg fa-fw" aria-hidden="true" title="April 2016"></i>&nbsp;&nbsp;April 2016</br>
+    <i class="fa fa-user-circle fa-lg fa-fw" aria-hidden="true" title="UX Researcher"></i> UX Researcher</br>
+  </div>
+
+</section>
+
+<!-- Body -->
+
+<div id="social-buttons">
+  <a href="#portfolioModal6" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fux_edenos%2Fsmbuttons.html&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+  <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Jonathan%20Calzada%27s%20Portfolio%3A%20UX%20Research%20%40CR&url=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fux_edenos%2Fsmbuttons.html&via=JonnyCalz"></a>
+  <a href="#portfolioModal6" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'Link copied to clipboard':'Link could not be copied to Clipboard.';
+        $(".fa-link").notify(msg, { position:"bottom right", style: 'smButtonTooltip'});
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
+</div>
+<!-- END: Social Media Buttons -->
+
+<section id="modal-body">
+  <div class="project-body-title color-ux">overview &amp; impact</div>
+  <div class="project-body-description">The Eden Online Support group is a non-profit organization run by medical students from the UCLA David Geffen School of Medicine at UCLA. Their platform provides the latest medical information about select chronic illnesses, creates a safe space for patients to discuss relevant topics, and informs them about clinical trials. Our UX team of six was comprised of UCLA students with a mixture of academic backgrounds studying UX Design at the UCLA Graduate School of Information Science/Studies. As one of the six, I worked closely with <a href="https://www.linkedin.com/in/jggautier/" target="_blank">Julian Gautier</a>, <a href="https://www.linkedin.com/in/yang-guo-64756549/" target="_blank">Yang Guo</a>, <a href="https://www.linkedin.com/in/wenbo-qi-404941116/" target="_blank">Wenbo Qi</a>, <a href="https://www.linkedin.com/in/geno21/" target="_blank">Geno Sanchez</a>, and <a href="https://www.linkedin.com/in/yaqi-yulisa-zhang-00b972114/" target="_blank">Yaqi Zhang</a>. Our UX student team completed research that explored users’ experiences beyond the digital platform. Our UX research not only informed the future design of the Eden Online Support platform, but it provided the client with a deeper understanding of the “patient experience,” and broadened the opportunity landscape of their platform.
+  </div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_edenos/images/group.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-user-md fa-lg color-ux" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Understanding the Problem Space</h4>
+        <p>
+          The Eden Online Support group requested help with improving the UI and interaction design of their Eden Online Support platform in effort to retain users, increase engagement, and organically build a community of patients. With regard to UX, the areas of focus included the platform’s information architecture (e.g. layout and navigation), visual and interaction design and Facebook integration. Understanding the problem space was a continuous iterative process throughout our work.
+        </p>
+      </div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-slideshare fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;UX Research Proposal</h4>
+        <p>
+          After meeting with EdenOS representatives and understanding the problem space including their needs and wants, our team of six presented a proposal covering the projected goals and scope of the research, clearly communicated the dependencies of activities, explained the methods in detail, and listed the planned deliverables along with a timeline and cost for our services. Because we completed the project through the UCLA iSchool, we volunteered our time and did not ultimately charge the client anything. The estimate of labor time put the project at a cost of $20,520 at the rate of $60/hr per UX Design Researcher.
+        </p>
+      </div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ux_edenos/images/proposal.png" /></div>
+  </div>
+</div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container center"><img src="cards/ux_edenos/images/jonathan.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+            <h4><i class="fa fa-sticky-note fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Research & Design Activities</h4>
+            <p>Research and designs revolved around the patient experience coping with main three chronic illnesses that the Eden team identified as very common:</p>
+              <ul>
+                <li>Hyperhidrosis</li>
+                <li>Eczema</li>
+                <li>Ulcerative Colitis</li>
+              </ul>
+            </br>
+            <p>
+              We completed UX expert reviews to constructively critique the existing platform and identify the ways in which it met (or not) targeted goals and design principles. We also conducted a competitive review to find out how the Eden platform compared with other similar solutions. After gathering and reviewing research data and further informing the problem space, we conducted a design thinking workshop in order to generate new ideas, designs and approaches. At the end of the workshop, we had a design approach and strategy to improve the Eden Online Platform.
+            </p>
+      </div>
+  </div>
+</div>
+
+</section>
+
+<section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-ux btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section>
+
+<!-- START: Resets URL when closing modal -->
+<script>$(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });</script>
+<!-- END: Resets URL when closing modal -->

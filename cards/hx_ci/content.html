@@ -1,0 +1,108 @@
+<!-- Header -->
+<section id="modal-hero" style="background-image: url(cards/hx_ci/images/hero.jpg);">
+  <div class="jcboom-card-modal-corner btn-close" data-dismiss="modal"><p class="jcboom-card-modal-corner-text color-hx">hx</p></div>
+  <div class="jcboom-card-modal-close btn-close" data-dismiss="modal"><p class="jcboom-card-modal-close-text color-hx">&times;</p></div>
+  <div class="modal-overlay type-hx"></div>
+  <div class="modal-title">Circle Innovations Startup</div>
+  <div class="jcboom-card-modal-ribbon color-hx bgcolor-white"><span class="jcboom-card-modal-ribbon-text">Haxoring Circle Innovations</span></div>
+
+  <div class="project-meta-data-li">
+    <i class="fa fa-building-o fa-lg fa-fw" aria-hidden="true" title="Circle Innovations"></i> Circle Innovations </br>
+    <i class="fa fa-info-circle fa-lg fa-fw" aria-hidden="true" title="Web Development"></i> Website Services </br>
+    <i class="fa fa-university fa-lg fa-fw" aria-hidden="true" title="Sole Proprietorship"></i> Sole Proprietorship</br>
+    <a href="https://www.linkedin.com/in/joncal" target="_blank"><i class="fa fa-user-circle fa-lg fa-fw" aria-hidden="true" title="UX Designer + Design Researcher"></i> Operator / Web Developer</a></br>
+    <a href="https://www.linkedin.com/in/luis-rivera-57a4149" target="_blank"><i class="fa fa-user-plus fa-lg fa-fw" aria-hidden="true" title="Luis P. Rivera, Web Developer"></i> Luis P. Rivera, Web Developer</a> </br>
+    <a href="https://www.linkedin.com/in/armando-bravo-4bb86865" target="_blank"><i class="fa fa-user-plus fa-lg fa-fw" aria-hidden="true" title="Armando R. Bravo"></i> Armando R. Bravo, Web Developer</a></br>
+  </div>
+
+</section>
+
+<!-- Body -->
+
+
+<!-- START: Social Media Buttons -->
+<div id="social-buttons">
+  <a href="#portfolioModal4" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fhx_ci%2Fsmbuttons.html&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+	<a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Jonathan%20Calzada%27s%20Portfolio%3A%20Circle%20Innovations%20startup&tw_p=tweetbutton&url=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fhx_ci%2Fsmbuttons.html&via=JonnyCalz"></a>
+  <a href="#portfolioModal4" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'Link copied to clipboard':'Link could not be copied to Clipboard.';
+        $(".fa-link").notify(msg, { position:"bottom right", style: 'smButtonTooltip'});
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
+</div>
+<!-- END: Social Media Buttons -->
+
+<section id="modal-body">
+  <div class="project-body-title color-hx">overview &amp; impact</div>
+  <div class="project-body-description">When I began Circle Innovations (CI) the Internet looked like it could fizzle out at any moment. Stagnant, sluggish, and static web pages made up a landscape that was scattered among a vast Primordial Ocean of inter(web)space.  Truly exciting websites existed like treasures waiting to be found on new pristine islands in a mysterious new ocean.  Macromedia (now Adobe) Flash was a glimmer of what movement and interaction the Internet could be. Back in those days when the Internet had a little “i”, a "onmouseover" effect&mdash;or what we now know as a “hover”&mdash;was a costly JavaScript endeavor. It was during those days when I hunched over my keyboard fixated on variables and functions for hours on end that I founded a web development firm together with <a href="https://www.linkedin.com/in/armando-bravo-4bb86865" target="_blank">Armando Bravo</a> and <a href="https://www.linkedin.com/in/luis-rivera-57a4149" target="_blank">Luis Rivera</a>. I didn't possess a formal education or professional training, so I 'haxored' my way; I 'Jugaad' it. Every step was a hacking effort. Life for me is a 'haxoring' effort. I use up, up, down, down, left, right, left, right, B, A, START, at least whenever I can in order to just catch up within our social structure
+  </div>
+  <div class="project-body-description2">
+
+  </div>
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/hx_ci/images/ci-website.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-university fa-lg color-hx" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;A Foundation</h4>
+        <p>The foundation of Circle Innovations was also the foundation of my initial strivings as a Haxor of all things. This is when I developed my skillset for computper software development and basic graphic design. Together with Luis Rivera and Armando Bravo, I completed web development, video and graphic design courses at Foothill College. An ad-hoc education that was just enough to make do. </p>
+      </div>
+  </div>
+</div>
+
+<br>
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-tags fa-lg color-hx" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Multifaceted Business</h4>
+        <p>CI was a multifaceted business offering end-to-end sevices, which could be broken up into Web Development, Web Design, Graphic Design, Multimedia (CD/Device deployment), and PC Repair.  In addition, we were able to customize high-performance computers for purchase.</p>
+      </div>
+			<div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/hx_ci/images/ci-facets2.png" /></div>
+
+  </div>
+</div>
+<br>
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-image-container"><img width="400px" src="cards/hx_ci/images/ci-facets.png" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-hourglass-end fa-lg color-hx" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Close of business</h4>
+        <p>As they say, all good things must...metamorphosize as it is only natural. Well, someone says that: me. I changed with the times and moved on from this endavor to the next. However, the skills and experience acquired from the ebbs and flows of owning a small business have been invaluable. </p>
+      </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+</section>
+
+<section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-hx btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section>
+
+<!-- START: Resets URL when closing modal -->
+<script>$(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });</script>
+<!-- END: Resets URL when closing modal -->

@@ -1,0 +1,131 @@
+<!-- Header -->
+<section id="modal-hero" style="background-image: url(cards/ph_amsterdam/images/hero.png);">
+  <div class="jcboom-card-modal-corner btn-close" data-dismiss="modal"><p class="jcboom-card-modal-corner-text color-ph">PH</p></div>
+  <div class="jcboom-card-modal-close btn-close" data-dismiss="modal"><p class="jcboom-card-modal-close-text color-ph">&times;</p></div>
+  <div class="modal-overlay type-ph"></div>
+  <div class="modal-title">Cultural Infrastructure</div>
+  <div class="jcboom-card-modal-ribbon color-ph bgcolor-white"><span class="jcboom-card-modal-ribbon-text">Amsterdam</span></div>
+
+  <div class="project-meta-data-li">
+    <i class="fa fa-map-marker fa-lg fa-fw" aria-hidden="true" title="Amsterdam"></i> Amsterdam </br>
+    <i class="fa fa-info-circle fa-lg fa-fw" aria-hidden="true" title="Amsterdam"></i> Infrastructure Series</br>
+    <i class="fa fa-calendar fa-lg fa-fw" aria-hidden="true" title="2009"></i> 2009</br>
+    <i class="fa  fa-camera-retro fa-lg fa-fw" aria-hidden="true" title="NIKON D60"></i> NIKON D60</br>
+  </div>
+
+</section>
+
+<!-- Body -->
+<!-- START: Social Media Buttons -->
+<div id="social-buttons">
+  <a href="#portfolioModal7" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fph_amsterdam%2Fsmbuttons.html&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+  <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Jonathan%20Calzada%27s%20Portfolio%3A%20Amsterdam%20Cultural%20Infrastructure%20Photo%20Series&tw_p=tweetbutton&url=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fph_amsterdam%2Fsmbuttons.html&via=JonnyCalz"></a>
+  <a href="#portfolioModal7" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'Link copied to clipboard':'Link could not be copied to Clipboard.';
+        $(".fa-link").notify(msg, { position:"bottom right", style: 'smButtonTooltip'});
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
+</div>
+
+<!-- END: Social Media Buttons -->
+<section style="margin-right: 60px;" id="modal-body">
+  <div class="project-body-title color-ph">Infrastructures as Cultural Systems</div>
+  <div class="project-body-description">Amsterdam’s beauty transforms the infrastructures that created it and that have influenced its culture. Its sharp edges geometrically align, retain, and guide its fluidity into areas of utility. Many cities hide their infrastructures below the visible surface often only brought into the consciousness of resident life when it fails to work. In Amsterdam these arterial veins, temporal markers, energy generators, and transportation apparatuses have been imbricated into the city’s identity and culturally influence its subsequent artistic production.  For example, the elephant installation embodies the fluidity of its water ways seen more saliently without the vibrant colors that otherwise distract through beauty from this point.
+  </div>
+<style>
+ #photo-grid * {
+    box-sizing: border-box;
+}
+
+
+#photo-grid .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+#photo-grid .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+#photo-grid .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    #photo-grid .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    #photo-grid .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+
+<!-- Photo Grid -->
+<div id="photo-grid">
+  <div class="row">
+    <div class="column">
+      <img src="cards/ph_amsterdam/images/1.jpg" style="width:100%">
+      <img src="cards/ph_amsterdam/images/2.jpg" style="width:100%">
+
+    </div>
+    <div class="column">
+      <img src="cards/ph_amsterdam/images/3.jpg" style="width:100%">
+      <img src="cards/ph_amsterdam/images/4.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="cards/ph_amsterdam/images/5.jpg" style="width:100%">
+      <img src="cards/ph_amsterdam/images/6.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="cards/ph_amsterdam/images/7.jpg" style="width:100%">
+      <img src="cards/ph_amsterdam/images/9.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+</section>
+<br /><br />
+<section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-ph btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section>
+
+<!-- START: Resets URL when closing modal -->
+<script>$(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });</script>
+<!-- END: Resets URL when closing modal -->
