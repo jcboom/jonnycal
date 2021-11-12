@@ -1,14 +1,15 @@
 <!-- Body -->
 <section id="info-body">
-  <div class="info-title">Philosophia &#x25cf; Anthropology &#x25cf; praxis</div>
+  <div class="info-title">Jonathan Calzada &#x25cf; design &#x25cf; information studies</div>
   <div class="info-text">
     As a User Experience practitioner, I am critical of the human-centered design philosophy as I push to broaden its scope and encompass key human aspects such as agency, intersectionality, identity and equity. I am aware that technology is socially constructed, which is to say that there is inherent culture nestled in the code of every software application. I seek to break the myth of autonomous technology through practice and education. My interdisciplinary background provides me with the tools to help design meaningful experiences.
   </div>
   <div class="info-menu">
-    <div class="info-menu-buttons"><a href="#" class="info-menu-button-info blue" onClick="$('#menu-open-ph').click();"><i class="fa fa-times"></i></a></div>
-    <div class="info-menu-buttons"><a href="#" class="info-menu-button-view green"  onClick="$('#menu-open-ph').click();"><i class="fa fa-eye"></i></a></div>
+    </br>
+   <div id="closeButton"class="info-menu-buttons"><a href="#portfolio" class="info-menu-button-info green btn-close" onClick="$('#menu-open-ph').click();"><i class="fa fa-times"></i></a></div>
+  <!--   <div class="info-menu-buttons"><a href="#" class="info-menu-button-view green"  onClick="$('#menu-open-ph').click();"><i class="fa fa-eye"></i></a></div>
     <div class="info-menu-buttons"><a href="https://jonathancalzada.com/CV.pdf" target="_blank" class="info-menu-button-resources orange"> <i class="fa fa-file-pdf-o"></i> </a></div>
-  </div>
+  --></div>
 </section>
 <script>
 /*******************************************************************************
@@ -31,3 +32,11 @@ $(document).ready(function(){
 <!-- <section id="footer">
   <div style="width:100%;"><button type="button" class="btn btn-default button-ux" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
 </section> -->
+
+<!-- START: Resets URL when closing modal -->
+<script>
+  $(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });
+  if (document.location.href.includes("#info-ph")) $("#hero-container").toggle(false); $("#jcboom-hero").removeClass("jcboom-page-blur"); //Removes index content so it won't interfere w/ modal text aesthetically
+  $('#closeButton').on('click', function() {	$('#info-ph').modal('hide'); }); /// Closes modal when clicking on closeButton.
+</script>
+<!-- END: Resets URL when closing modal -->

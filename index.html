@@ -96,7 +96,7 @@
 
 					<div><!--I'm not sure why this needs to be here, but it places the nav menu to the right.  NEED TO CLEAN UP: Jonathan Calzada-->
 						<div class="jcboom-right-position">
-              <h2 class="animate-box"><span id="first-name"><!--Content being added in style.css --></span> <span id="last-name"><!--Content being added in style.css --></span></h2>
+							<h2 class="animate-box"><a href="about.html" data-toggle="modal" data-target="#about" style="color:#fff" class="jcboom-project-item"><span id="first-name"><!--Content being added in style.css --></span> <span id="last-name"><!--Content being added in style.css --></span></a></h2>
 							<h2><!-- <h2> makes the #Anthropologist text and others more visible --->
 							 <div id="navbuttons">
 								<button id="navbutton-an" type="button" class="btn bgcolor-an btn-circle btn-xl animate-box scroll-btn">An</button>
@@ -339,66 +339,7 @@
 						<p class="animate-box">*Inspired by the <a href="https://www.ethanzuckerman.com/blog/2010/09/09/media-tracking-and-the-quantified-self/" target="_blank">quantified-self</a> movement and <a href="https://sofifa.com" target="_blank">sofifa.com.</a></p>
 					</div>
 				</div>
-				<!-- <div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
-						<div class="jcboom-feature">
-							<div class="jcboom-icon">
-								<i class="icon-power"></i>
-							</div>
-							<h3>Best For Startup</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
-						<div class="jcboom-feature">
-							<div class="jcboom-icon">
-								<i class="icon-flag2"></i>
-							</div>
-							<h3>Easy To Use</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
-						</div>
-					</div>
-					<div class="clearfix visible-sm-block"></div>
-					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
-						<div class="jcboom-feature">
-							<div class="jcboom-icon">
-								<i class="icon-anchor"></i>
-							</div>
-							<h3>Robust In Mind</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
-						</div>
-					</div>
 
-					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
-						<div class="jcboom-feature">
-							<div class="jcboom-icon">
-								<i class="icon-paragraph"></i>
-							</div>
-							<h3>Beautiful Typography</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
-						</div>
-					</div>
-					<div class="clearfix visible-sm-block"></div>
-					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
-						<div class="jcboom-feature">
-							<div class="jcboom-icon">
-								<i class="icon-umbrella"></i>
-							</div>
-							<h3>Eco Friendly</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
-						<div class="jcboom-feature">
-							<div class="jcboom-icon">
-								<i class="icon-toggle"></i>
-							</div>
-							<h3>Wide and Boxed</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
-						</div>
-					</div>
-					<div class="clearfix visible-sm-block"></div>
-				</div> -->
 			</div>
 		</section>
 
@@ -634,7 +575,7 @@
 	*******************************************************************************/
 	/* BEGIN: FUNCTION */
 	$(document).ready(function() {
-	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6','#portfolioModal7', '#portfolioModal8', '#portfolioModal9']; //need to be dynamic Jonathan Calzada
+	  var modals = ['#about', '#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6','#portfolioModal7', '#portfolioModal8', '#portfolioModal9']; //need to be dynamic Jonathan Calzada
 	  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
 			var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
 			if (htmlContent) {
@@ -792,7 +733,10 @@
 
 	};
 
-	/* Hero Area: Hide all contents when modal open
+	/* Hero Area: Hide all contents when modal open */
+	$('#about').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
+	$('#about').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	$("#jcboom-hero").addClass("jcboom-page-blur"); })
+
 	$('#info-an').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
 	$('#info-an').on('show.bs.modal', function () {		$("#hero-container").toggle(false); $("#jcboom-hero").addClass("jcboom-page-blur");	})
 	$('#info-ux').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
@@ -803,7 +747,7 @@
 	$('#info-hx').on('show.bs.modal', function () {		$("#hero-container").toggle(false); $("#jcboom-hero").addClass("jcboom-page-blur");	})
 	$('#info-an').on('click', function() {	$('#info-an').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 	$('#info-ux').on('click', function() {	$('#info-ux').modal('hide'); }); /// Closes modal when clicking anywhere in it.
-	$('#info-ph').on('click', function() {	$('#info-ph').modal('hide'); }); /// Closes modal when clicking anywhere in it.
+//	$('#info-ph').on('click', function() {	$('#info-ph').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 	$('#info-hx').on('click', function() {	$('#info-hx').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 
 	$('#resources-an').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
@@ -818,7 +762,7 @@
 	$('#resources-ux').on('click', function() {	$('#resources-ux').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 	$('#resources-ph').on('click', function() {	$('#resources-ph').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 	$('#resources-hx').on('click', function() {	$('#resources-hx').modal('hide'); }); /// Closes modal when clicking anywhere in it.
-*/
+
 
 
 /* MENU BUTTONS */
@@ -1035,6 +979,8 @@ function resetMainMenu(){
 <div class="hero-modal modal fade" id="info-ux" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="hero-modal modal fade" id="info-ph" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="hero-modal modal fade" id="info-hx" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+<div class="hero-modal modal fade" id="about" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+
 
 <div class="hero-modal modal fade" id="resources-an" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="hero-modal modal fade" id="resources-ux" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>

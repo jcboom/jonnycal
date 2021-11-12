@@ -1,0 +1,43 @@
+<!-- Body -->
+<section id="info-body">
+  <div class="info-title">Jonathan Calzada / design / information studies</div>
+  <div class="info-text">
+<!--
+    As a User Experience practitioner, I am critical of the human-centered design philosophy as I push to broaden its scope and encompass key human aspects such as agency, intersectionality, identity and equity. I am aware that technology is socially constructed, which is to say that there is inherent culture nestled in the code of every software application. I seek to break the myth of autonomous technology through practice and education. My interdisciplinary background provides me with the tools to help design meaningful experiences.
+-->
+<p>Jonathan Calzada is a doctoral student at the Graduate School Education and Information Studies at UCLA. His research investigates how Non-Fungible Tokens as information transmit, translate, and create social realities of exchange. Jonathan holds a Masters of Library and Information Science (MLIS) and a B.A. in Anthropology with a minor in Digital Humanities from UCLA. Jonathan’s professional and academic work incorporate inquiries of power and social justice, especially in the spaces within which he is most familiar as a software designer. Having grown up in Redwood City (California) and around the neighboring Palo Alto area, Jonathan has worked within the information technology sector throughout his entire adult life. He has held positions as computer technician, programmer, researcher, designer, and even once as a Microsoft PowerPoint slides editor. Drawing from his professional experience, Jonathan has focused on the critical study of user interface design and the ways in which they drive the highly transgressive production of information technology. </p>
+  </div>
+  <div class="info-menu">
+    </br>
+   <div id="closeButton"class="info-menu-buttons"><a href="#portfolio" class="info-menu-button-info blue btn-close" onClick="$('#menu-open-ph').click();" title="close"><i class="fa fa-times"></i></a></div>
+ </div>
+</section>
+<script>
+/*******************************************************************************
+* Author: Jonathan Calzada
+* Purpose: Menu modal buttons
+* Date: 7/10/2017
+*******************************************************************************/
+$(document).ready(function(){
+  $('.info-menu-button-view').click(function(){
+    $(document.body).animate({
+      'scrollTop':   $('#jcboom-projects').offset().top
+    }, 1000);
+  });
+ });
+</script>
+
+
+<!-- Footer -->
+
+<!-- <section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-ux" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section> -->
+
+<!-- START: Resets URL when closing modal -->
+<script>
+  $(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });
+  if (document.location.href.includes("#about")) $("#hero-container").toggle(false); $("#jcboom-hero").removeClass("jcboom-page-blur"); //Removes index content so it won't interfere w/ modal text aesthetically
+  $('#closeButton').on('click', function() {	$('#about').modal('hide'); }); /// Closes modal when clicking on closeButton.
+</script>
+<!-- END: Resets URL when closing modal -->
