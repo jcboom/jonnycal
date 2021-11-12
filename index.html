@@ -154,6 +154,13 @@
 					<!--CARDS use: https://source.unsplash.com/random for random content -->
 					<div id="cards">
 
+						<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+							<a href="cards/ux_varian/content.html" data-toggle="modal" data-target="#portfolioModal9" class="jcboom-project-item">
+								<img src="cards/ux_varian/images/card.jpg" alt="Image" class="img-card-responsive" />
+								<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Ux</p></div>
+								<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design @ Varian</span></div>
+							</a>
+						</div>
 
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="cards/ux_yinzcam/content.html" data-toggle="modal" data-target="#portfolioModal1" class="jcboom-project-item">
@@ -627,7 +634,7 @@
 	*******************************************************************************/
 	/* BEGIN: FUNCTION */
 	$(document).ready(function() {
-	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6','#portfolioModal7', '#portfolioModal8']; //need to be dynamic Jonathan Calzada
+	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6','#portfolioModal7', '#portfolioModal8', '#portfolioModal9']; //need to be dynamic Jonathan Calzada
 	  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
 			var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
 			if (htmlContent) {
@@ -1022,6 +1029,7 @@ function resetMainMenu(){
 <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 
 <div class="hero-modal modal fade" id="info-an" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="hero-modal modal fade" id="info-ux" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
