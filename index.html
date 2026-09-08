@@ -178,6 +178,14 @@
 						</a>
 					</div>
 
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-an">
+						<a href="cards/ac_copy+paste_machine/content.html" data-toggle="modal" data-target="#pModal_AC_CopyPasteMachine" class="jcboom-project-item">
+							<img src="cards/ac_copy+paste_machine/images/card.png" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Ac</p></div>
+							<div id="jcboom-card-ribbon-an" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Copy+Paste Machine</span></div>
+						</a>
+					</div>
+
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
 						<a href="cards/ph_amsterdam/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal7">
 							<img src="cards/ph_amsterdam/images/cardface.jpg" alt="Image" class="img-card-responsive" />
@@ -481,7 +489,7 @@
 	*******************************************************************************/
 	/* BEGIN: FUNCTION */
 	$(document).ready(function() {
-	  var modals = ['#about', '#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6','#portfolioModal7', '#portfolioModal8', '#portfolioModal9']; //need to be dynamic Jonathan Calzada
+	  var modals = ['#about', '#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6','#portfolioModal7', '#portfolioModal8', '#portfolioModal9', '#pModal_AC_CopyPasteMachine']; //need to be dynamic Jonathan Calzada
 	  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
 			var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
 			if (htmlContent) {
@@ -880,6 +888,8 @@ function resetMainMenu(){
 <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+<div class="portfolio-modal modal fade" id="pModal_AC_CopyPasteMachine" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+
 
 <div class="hero-modal modal fade" id="info-an" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="hero-modal modal fade" id="info-ux" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
