@@ -1,0 +1,160 @@
+<!-- Header -->
+<section id="modal-hero" style="background-image: url(cards/ac_inverting_uxd/images/hero.jpg);">
+  <div class="jcboom-card-modal-corner btn-close" data-dismiss="modal"><p class="jcboom-card-modal-corner-text color-an">Ac</p></div>
+  <div class="jcboom-card-modal-close btn-close" data-dismiss="modal"><p class="jcboom-card-modal-close-text color-an">&times;</p></div>
+  <div class="modal-overlay type-an"></div>
+  <div class="modal-title">Inverting User Experience Design</div>
+  <div class="jcboom-card-modal-ribbon color-an bgcolor-white"><span class="jcboom-card-modal-ribbon-text">Inverting UX Design</span></div>
+
+  <div class="project-meta-data-li">
+    <a href="https://seis.ucla.edu/" target="_blank"><i class="fa fa-university fa-lg fa-fw" aria-hidden="true" title="UCLA"></i>UCLA iSchool </a></br>
+    <a href="https://youtu.be/3UjZ_yagQzQ?si=xQoZG-El88148LWY" target="_blank"><i class="fa fa-book fa-lg fa-fw" aria-hidden="true" title="Sports App Developer"></i> Research & Inquiry Conference </a></br>
+    <i class="fa fa-calendar fa-lg fa-fw" aria-hidden="true" title="Summer 2016"></i>  May 3,2018</br>
+    <i class="fa fa-user-circle fa-lg fa-fw" aria-hidden="true" title="UX Designer + Design Researcher"></i> Graduate Student Researcher</br>
+    <a href="https://scholar.google.com/citations?user=FN5-XFgAAAAJ&hl=en" target="_blank"><i class="fa fa-user-plus fa-lg fa-fw" aria-hidden="true" title="Peter Polack"></i> Peter Polack, Graduate Student Researcher</a></br>
+  </div>
+  <div class="project-meta-data-li2">
+    <a href="https://seis.ucla.edu/faculty/leah-lievrouw/" target="_blank"><i class="fa fa-user-plus fa-lg fa-fw" aria-hidden="true" title="Dr. Leah Lievrouw, Mentor"></i> Dr. Leah Lievrouw, Mentor</a></br>
+  </div>
+</section>
+
+<!-- Body -->
+
+<!-- START: Social Media Buttons -->
+<div id="social-buttons">
+  <a href="#portfolioModal2" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjonnycal.com%2Fcards%2Fan_design_anthro%2Fsmbuttons.html&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+  <link rel="me" href="https://jonnycal.com/#portfolioModal2">
+  <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Jonathan%20Calzada%20-%20Portfolio&tw_p=tweetbutton&url=https%3A%2F%2Fjonnycal.com%2Fcards%2Fan_design_anthro%2Fsmbuttons.html&via=JonnyCalz"></a>
+  <a href="#portfolioModal2" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'Link copied to clipboard':'Link could not be copied to Clipboard.';
+        $(".fa-link").notify(msg, { position:"bottom right", style: 'smButtonTooltip'});
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
+</div>
+<!-- END: Social Media Buttons -->
+
+<section id="modal-body">
+  <div class="project-body-title color-an">overview &amp; impact</div>
+  <div class="project-body-description">As a field of study, User Experience (UX) represents a broad range of human interactions with
+interfaces and digital media technologies. As such, UX imposes no limit on the possible
+experiences that users can have when interacting with technology. Nevertheless, UX as a
+discipline tends towards delineating specific design principles and scientific models that treat the practice of designing for users and their experiences as a matter of formal expertise. In this
+Participatory Session, we investigated methods for analyzing and confronting this expert
+approach to UX.  
+
+  </div>
+
+<div style="width:100%;">
+  <div style="display:table" class="subsection">
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ac_inverting_uxd/images/IMG_7219.JPG" style="border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-graduation-cap fa-lg color-an fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Methodology</h4>
+        <p>Focus Group & Participatory Design: Participants were prompted to analyze existing popular interfaces – namely
+Facebook, Google, Amazon, and Wikipedia – and identify the purposes, agents, and qualities of their user experiences. Participants worked in groups to produce user interface mockups that inverted the qualities and values of the user experiences that they analyzed.
+        </p>
+      </div>
+  </div>
+</div>
+
+<br>
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-search fa-lg color-an" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Findings</h4>
+        <p>
+          Through this workshop, participants learned new ways to interrogate interfaces and new vocabularies with which to expose hidden design aspects. Together we discussed three main design dimensions: 1) Design paradigms, 2) navigational cues, and 3) enunciative design. Using these dimensions helped us focus our attention on interface elements that represented specific aesthetics, functionality, narrative, intention, and meaning. It then became easier to locate the constituent aspects of each dimension and invert them. 
+          <br /><br />
+        In the end, participants were asked to design their own user interfaces in light of their findings and their personal, professional, and academic backgrounds. Through this process, participants found that they were interrogating themselves as much as they were interrogating the different interfaces, as one of them mentioned that “we are manipulated and have been engineered by the corporate machine.”          </p>
+      </div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><img src="cards/ac_inverting_uxd/images/inversion1.JPG" style="border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);" /></div>
+
+  </div>
+</div><br />
+
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-image-container"><img width="400px" src="cards/ac_inverting_uxd/images/IMG_2108.jpeg" style="border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);" /></div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-book fa-lg color-an" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Theoretical implications</h4>
+        <p>As a group, we examined how the inverted interfaces reveal inconspicuous qualities of existing user experiences, how inverting these qualities challenges their normativity, and how speculative interfaces can formulate alternatives to expert approaches to UX. The commercialization of interfaces quickly became blatantly apparent, as shown by well-articulated, precise interface examples. Ultimately, the workshop session served as a proof of concept for a promising hermeneutical approach to critical interface design. 
+        </br></br>
+<i>*The session received the 2018 R&I Conference Award.</i></p>
+      </div>
+  </div>
+</div><br />
+
+<!--
+<br>
+<div style="width:100%;">
+  <div class="subsection">
+      <div style="display:table-cell" class="subsection-text-container">
+        <h4><i class="fa fa-graduation-cap fa-lg color-an" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Inquiry Continued @ UCLA</h4>
+        <p>I continued aspects of this research inquiry at UCLA, which resulted in an honors thesis exploring human-centered software development culture. <br /></p>
+        <p style="font-size:9pt;text-align:center; margin: auto; line-height:11pt;font-weight:bold">Thesis Abstract</p><br />
+          <p style="font-size:9pt;text-align:justify;margin:auto; width: 85%;line-height:11pt">
+          As the role of digital products expands in the consciousness of 21st century publics,
+business organizations are increasingly adopting a human-centered design approach to
+computer software development in an effort to innovate and reach a broader consumer
+base. Although there are many variations to incorporating human-centered design, they
+all share a singular philosophy of situating the human user at the center of the design
+process (Schneider, Arble, Olson, & Wolff, 1980). User psychological and physical needs
+and expectations are used as a primary focus of design as opposed to expecting the user
+to adapt to a design focusing on business, logistical, technological or other non-human
+factors (Greenhouse 2010). These emerging approaches to software design require an
+internal shift in thinking and adoption of new business practices. Such a transition
+between traditional software development processes (e.g. waterfall model) and emerging
+human-centered design methods (e.g. User-Centered Design and Agile) parallel the idea
+of a shift from modern to postmodern software development culture (Robinson et al.
+1998). Through ethnographic research, this paper provides an on-the-ground description
+of how individuals of a design team at a traditional American company interact as they
+internalize this significant shift in thinking and practice. The ethnography takes place
+during a timely period when a hybridity of modern and postmodern software design and
+development culture can be observed. This period allows researchers to analyze how
+particular design activities and software development practices are defined through
+postmodernist culture.
+</p>
+
+      </div>
+      <div style="display:table-cell" class="subsection-divider-container"><div class="divider">&nbsp;</div></div>
+      <div style="display:table-cell" class="subsection-image-container"><a href="https://lemelson.anthro.ucla.edu/student-scholars/" target="_blank"><img width="400px" src="cards/an_design_anthro/images/LemelsonCard.png" /></a></div>
+
+  </div>
+</div><br />
+-->
+
+
+<br>
+<br>
+<br>
+</section>
+
+<section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-an btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section>
+
+<!-- START: Resets URL when closing modal -->
+<script>$(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });</script>
+<!-- END: Resets URL when closing modal -->
